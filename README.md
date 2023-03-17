@@ -5,4 +5,5 @@
 # estrutura-de-dados 3º Periodo
 # Professor: Marcio Alexandre Dias Garrido
 
-Introdução:
+# Introdução:
+Trabalho 04-P01 Tendo em vista o conjunto de elementos abaixo, criar um algoritmo que seja capaz de determinar a posição de cada elemento e printar as de forma ascendente os valores, assim como printar separadamente as posições atuais. No final imprimir de forma gráfica a notação Big'O do seu resultado.
