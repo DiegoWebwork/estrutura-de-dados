@@ -1,3 +1,3 @@
 # estrutura-de-dados
-![alt text]([https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/universidadedevassourasVertical.png](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/universidade%20de%20vassouras%20Vertical.png))
+![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/universidade%20de%20vassouras%20Vertical.png)
 trabalho
