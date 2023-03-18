@@ -7,4 +7,4 @@
 
 # Introdução:
 
-O problema apresentado pede que observemos um conjunto de elementos e que se crie um algoritmo capaz de determinar a posição de cada elemento além de printar de forma ascendente os valores e printar de forma separada suas posições atuais. No final imprimir de forma gráfica a notação Big'O do seu resultado.
+O problema apresentado pede que observemos um conjunto de elementos e que se crie um algoritmo capaz de determinar a posição de cada elemento além de printar de forma ascendente os valores, printando de forma separada suas posições atuais. No final imprimir de forma gráfica a notação Big'O do seu resultado.
