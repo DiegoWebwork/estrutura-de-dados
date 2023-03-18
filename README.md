@@ -2,7 +2,7 @@
 
 # Curso: Engenharia de Software
 # Alunos: Diego Rios dos Santos
-# estrutura-de-dados 3º Periodo
+# Disciplina: estrutura-de-dados 3º Periodo
 # Professor: Marcio Alexandre Dias Garrido
 
 # Introdução:
