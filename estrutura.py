@@ -39,7 +39,7 @@ print("Posições:", indices)
 
 
 """
-Este código cria uma matriz de 4x4 com números inteiros e, em seguida, ordena seus elementos em ordem crescente e imprime a matriz ordenada e as posições em que os elementos estão na matriz.
+Este código cria uma matriz de 4x4 com letras e, em seguida, ordena seus elementos em ordem crescente e imprime a matriz ordenada e as posições em que os elementos estão na matriz.
 O script começa definindo as variáveis que serão usadas para trabalhar com a matriz, como o número de linhas e colunas, as posições iniciais e
 finais e uma lista vazia para armazenar as posições dos elementos. Em seguida, um laço while é iniciado, que percorre a matriz em espiral,
 começando pela linha superior e percorrendo em sentido horário.
