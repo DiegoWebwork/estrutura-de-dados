@@ -38,7 +38,7 @@ while iniLi <= fimLi and iniCol <= fimCol:
 # Ordena os elementos em ordem crescente e imprime
 matrizPronta = sorted([mtx for linha in matriz for mtx in linha])
 print("Matriz ordenada: ", matrizPronta)
-print("Posi��es:", indices)
+print("Posiçes:", indices)
 
 
 x = list(range(len(matrizPronta)))
