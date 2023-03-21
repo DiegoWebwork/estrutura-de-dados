@@ -45,7 +45,7 @@ x = list(range(len(matrizPronta)))
 y = [ord(c) for c in matrizPronta]
 
 plt.plot(x, y)
-plt.title("Grafico de Notacao Big'O")
+plt.title("Grafico de Notação Big'O")
 plt.xlabel("Tamanho do conjunto de dados")
-plt.ylabel("Tempo de execucao")
+plt.ylabel("Tempo de execução")
 plt.show()
