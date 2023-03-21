@@ -1,7 +1,7 @@
 ![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/universidade%20de%20vassouras%20Vertical.png)
 
 # Curso: Engenharia de Software
-# Alunos: Diego Rios dos Santos (202010774) ,  Edgar Belloti (202212008), Matheus Caetano (202211010), Rogger Oliveira.
+# Alunos: Diego Rios dos Santos (202010774) ,  Edgar Belloti (202212008), Matheus Caetano (202211010), Rogger Oliveira(202210825).
 # Disciplina: Estrutura de dados 3º Periodo
 # Professor: Marcio Alexandre Dias Garrido
 url:https://github.com/DiegoWebwork/estrutura-de-dados
