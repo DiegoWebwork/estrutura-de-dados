@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt 
-matriz = [['a', 'b', 'c', 'd'],['q', 'i', 'n', 'm'],['f', 'e', 'h', 'j'], ['p', 'o', 'l', 'g']]
 
+
+matriz = [['a', 'b', 'c', 'd'],['q', 'i', 'n', 'm'],['f', 'e', 'h', 'j'], ['p', 'o', 'l', 'g']]
 
 #definimos as variaveis que utilizaremos para trabalhar com a matriz fornecida
 maLi = len(matriz)  #Linha
