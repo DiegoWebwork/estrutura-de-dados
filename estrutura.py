@@ -50,3 +50,14 @@ plt.title("Grafico de Notação Big'O")
 plt.xlabel("Tamanho do conjunto de dados")
 plt.ylabel("Tempo de execução")
 plt.show()
+
+"""
+Este código cria uma matriz de 4x4 com letras, em seguida, ordena seus elementos em ordem crescente e imprime a matriz ordenada e as posições em que os elementos estão na matriz.
+O script começa definindo as variáveis que serão usadas para trabalhar com a matriz, como o número de linhas e colunas, as posições iniciais e
+finais e uma lista vazia para armazenar as posições dos elementos. Em seguida, um laço while é iniciado, que percorre a matriz em espiral,
+começando pela linha superior e percorrendo em sentido horário.
+Dentro do laço while, há quatro laços for aninhados, que percorrem a linha superior, a última coluna, a última linha e a primeira coluna da matriz, respectivamente.
+Para cada iteração desses laços, as posições dos elementos correspondentes são adicionadas à lista de índices.
+Finalmente, a lista de índices é impressa juntamente com a matriz ordenada, que é criada usando a função sorted() aplicada à matriz original.
+para impressão do grafico big'O' foi utilizada a biblioteca matplotlib
+"""
