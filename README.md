@@ -15,4 +15,10 @@ Para resolução do problema utilizamos a biblioteca matplotlib, além de noçõ
 
 ![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/problema%20inicial.jpeg)
 
+![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/saida1.png)
+
+![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/saida2.png)
+
+# Solução do grupo:
+
 
