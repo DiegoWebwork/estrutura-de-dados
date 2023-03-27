@@ -26,4 +26,5 @@ Para resolução do problema utilizamos a biblioteca matplotlib, além de noçõ
 ![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/Screenshot%20from%202023-03-27%2017-54-12.png)
 ![alt text](https://user-images.githubusercontent.com/68088452/228064871-c7f49d32-052a-48b1-9ada-16778244e471.png)
 
+# Impressão do grafico Big'O'
 ![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/big_o.png)
