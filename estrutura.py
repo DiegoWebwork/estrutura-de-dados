@@ -1,49 +1,51 @@
+matrizElementos = [['a', 'b', 'c', 'd'],['q', 'i', 'n', 'm'],['f', 'e', 'h', 'j'], ['p', 'o', 'l', 'g']] #criamos a matriz de 4x4 (4 listas de 4 elementos cada.)
+
 import matplotlib.pyplot as plt 
+#definimos as variaveis que utilizaremos para trabalhar com a matrizElementos fornecida
+linhaMatriz = len(matrizElementos)  #Linha
+colunaMatriz = len(matrizElementos[0])  #Coluna
+linhaInicial = 0   #Linha inicial
+linhaFinal = linhaMatriz - 1  
+colunaInicial = 0  #Define a coluna inicial 
+colunaFinal = colunaMatriz - 1  
+indices = []   #array para atribuir as posições e percorrer as mesmas com laço for.
 
 
-matriz = [['a', 'b', 'c', 'd'],['q', 'i', 'n', 'm'],['f', 'e', 'h', 'j'], ['p', 'o', 'l', 'g']]
+"""
+essas variáveis (linhaInicial e colunaFinal) tomam o valor -1 para ajustar a diferença entre a contagem de linhas/colunas (que começa em 1) e os índices da matriz (que começam em 0).
+"""
 
-#definimos as variaveis que utilizaremos para trabalhar com a matriz fornecida
-maLi = len(matriz)  #Linha
-maCol = len(matriz[0])  #Coluna
-iniLi = 0   #Linha inicial
-fimLi = maLi - 1    #Define linha final pegando a o indice da matriz e subtraindo 1
-iniCol = 0  #Define a coluna inicial 
-fimCol = maCol - 1  #Define coluna final pegando a o indice da matriz e subtraindo 1
-indices = []   #array para atribuir as posi��es e fazer indexa��o com for.
+while linhaInicial <= linhaFinal and colunaInicial <= colunaFinal: #Esse loop while percorre a matriz enquanto a linha inicial não ultrapassar a linha final e a coluna inicial não ultrapassar a coluna final.
+    
+    for i in range(colunaInicial, colunaFinal + 1): #Essa condicional percorre a linha superior da matriz, adicionando as posições passadas na lista indices.
+        indices.append(f"{linhaInicial}:{i}")
+    linhaInicial += 1
 
-# Abre laco
-while iniLi <= fimLi and iniCol <= fimCol:
-    # Percorre a linha superior da matriz
-    for i in range(iniCol, fimCol + 1):
-        indices.append(f"{iniLi}:{i}")
-    iniLi += 1
+   
+    for i in range(linhaInicial, linhaFinal + 1): #Essa condicional percorre a última coluna da matriz, adicionando as posições passadas na lista indices.
+        indices.append(f"{i}:{colunaFinal}")
+    colunaFinal -= 1
 
-    # Percorre a ultima coluna da matriz
-    for i in range(iniLi, fimLi + 1):
-        indices.append(f"{i}:{fimCol}")
-    fimCol -= 1
+    
+    if linhaInicial <= linhaFinal:  #Essa condicional define que será percorrida a última linha da matriz, caso exista. Ela é executada somente se a linhaInicial for menor ou igual à linhaFinal.
+        for i in range(colunaFinal, colunaInicial - 1, -1): #Essa condicional percorre a última linha da matriz em ordem inversa, adicionando as posições passadas na lista indices.
+            indices.append(f"{linhaFinal}:{i}")
+        linhaFinal -= 1     #é usada para atualizar a variável linhaFinal, para que o próximo loop while comece na linha anterior.
 
-    # Percorre a ultima linha da matriz
-    if iniLi <= fimLi:
-        for i in range(fimCol, iniCol - 1, -1):
-            indices.append(f"{fimLi}:{i}")
-        fimLi -= 1
+    
+    if colunaInicial <= colunaFinal: #Essa condicional define que será percorrida a primeira coluna da matriz, caso exista. Ela é executada somente se a colunaInicial for menor ou igual à colunaFinal.
+        for i in range(linhaFinal, linhaInicial - 1, -1):   #Essa condicional percorre a primeira coluna da matriz em ordem inversa, adicionando as posições passadas na lista indices.
+            indices.append(f"{i}:{colunaInicial}")
+        colunaInicial += 1  #Essa linha adiciona 1 à variável colunaInicial para que o loop saia da seção já visitada.
 
-    # Percorre a primeira coluna da matriz
-    if iniCol <= fimCol:
-        for i in range(fimLi, iniLi - 1, -1):
-            indices.append(f"{i}:{iniCol}")
-        iniCol += 1
 
-# Ordena os elementos em ordem crescente e imprime
-matrizPronta = sorted([mtx for linha in matriz for mtx in linha])
-print("Matriz ordenada: ", matrizPronta)
+unidimenLista = sorted([mtx for linha in matrizElementos for mtx in linha]) #list comprehension, essa construção cria uma lista unidimensional que contém todos os elementos da matriz original matrizElementos.
+print("Matriz ordenada: ", unidimenLista)
 print("Posições:", indices)
 
 
-x = list(range(len(matrizPronta)))
-y = [ord(c) for c in matrizPronta]
+x = list(range(len(unidimenLista)))
+y = [ord(c) for c in unidimenLista]
 
 plt.plot(x, y)
 plt.title("Grafico de Notação Big'O")
@@ -51,13 +53,4 @@ plt.xlabel("Tamanho do conjunto de dados")
 plt.ylabel("Tempo de execução")
 plt.show()
 
-"""
-Este código cria uma matriz de 4x4 com letras, em seguida, ordena seus elementos em ordem crescente e imprime a matriz ordenada e as posições em que os elementos estão na matriz.
-O script começa definindo as variáveis que serão usadas para trabalhar com a matriz, como o número de linhas e colunas, as posições iniciais e
-finais e uma lista vazia para armazenar as posições dos elementos. Em seguida, um laço while é iniciado, que percorre a matriz em espiral,
-começando pela linha superior e percorrendo em sentido horário.
-Dentro do laço while, há quatro laços for aninhados, que percorrem a linha superior, a última coluna, a última linha e a primeira coluna da matriz, respectivamente.
-Para cada iteração desses laços, as posições dos elementos correspondentes são adicionadas à lista de índices.
-Finalmente, a lista de índices é impressa juntamente com a matriz ordenada, que é criada usando a função sorted() aplicada à matriz original.
-para impressão do grafico big'O' foi utilizada a biblioteca matplotlib
-"""
+
