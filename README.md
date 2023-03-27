@@ -9,5 +9,5 @@ url:https://github.com/DiegoWebwork/estrutura-de-dados
 # Introdução:
 
 O problema apresentado pede que observemos um conjunto de elementos e que se crie um algoritmo capaz de determinar a posição de cada elemento além de printar de forma ascendente os valores e printando de forma separada suas posições atuais. No final imprimir de forma gráfica a notação Big'O do seu resultado.
-![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/problema%20inicial.png)
+https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/problema%20inicial.jpeg
 Para resolução do problema utilizamos a biblioteca matplotlib, além de noções de matriz e laços de repetição 
