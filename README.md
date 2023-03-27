@@ -22,3 +22,5 @@ Para resolução do problema utilizamos a biblioteca matplotlib, além de noçõ
 # Solução do grupo:
 
 ![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/Screenshot%20from%202023-03-27%2017-51-04.png)
+
+![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/Screenshot%20from%202023-03-27%2017-54-12.png))
