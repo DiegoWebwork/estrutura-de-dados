@@ -1,7 +1,11 @@
-matrizElementos = [['a', 'b', 'c', 'd'],['q', 'i', 'n', 'm'],['f', 'e', 'h', 'j'], ['p', 'o', 'l', 'g']] #criamos a matriz de 4x4 (4 listas de 4 elementos cada.)
+import matplotlib.pyplot as plt
 
-import matplotlib.pyplot as plt 
+#criamos a matriz de 4x4 (4 listas de 4 elementos cada.)
+
+matrizElementos = [['a', 'b', 'c', 'd'],['q', 'i', 'n', 'm'],['f', 'e', 'h', 'j'], ['p', 'o', 'l', 'g']] 
+
 #definimos as variaveis que utilizaremos para trabalhar com a matrizElementos fornecida
+
 linhaMatriz = len(matrizElementos)  #Linha
 colunaMatriz = len(matrizElementos[0])  #Coluna
 linhaInicial = 0   #Linha inicial
