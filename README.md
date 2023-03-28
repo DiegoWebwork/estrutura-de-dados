@@ -14,5 +14,3 @@ Para resolução do problema utilizamos a biblioteca matplotlib, além de noçõ
 # problema inicial:
 
 ![alt text](https://github.com/DiegoWebwork/estrutura-de-dados/blob/main/problema%20inicial.jpeg)
-
-
